@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<style>
+    .section-portfolio {
+        background: var(--bg);
+        transition: all .7 linear;
+        margin-top: 2rem;
+    }
+
+    .section-portfolio p {
+        max-width: 30rem;
+    }
+
+    .aap {
+        margin-left: 4rem;
+    }
+
+    .p-btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.6rem;
+        margin-top: 3.2rem;
+    }
+
+    .portfolio-img {
+        gap: 1.6rem;
+        margin-top: 3.2rem;
+
+
+    }
+
+    .portfolio-img img {
+        width: 300px;
+        height: 300px;
+        border-radius: 1rem;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 12px 2.5rem 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .img-overlay {
+        position: relative;
+        overflow: hidden;
+        border-radius: 1rem;
+    }
+
+    .img-overlay .overlay {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+        background: rgba(0, 128, 0, .5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(130%);
+        transition: all .2s linear;
+    }
+
+    .img-overlay:hover>.overlay {
+        transform: translateY(0);
+        opacity: 0.8;
+        cursor: pointer;
+        display: inline;
+    }
+
+    .img-overlay .common-heading1 {
+        color: var(--white);
+        padding: 2rem;
+        font-size: 3rem;
+        text-decoration: none;
+    }
+
+    .img-overlay p {
+        margin-top: -1rem;
+        font-size: 1.3rem;
+        padding: 2rem;
+        text-align: justify;
+        color: var(--white);
+    }
+
+    .p-btn-active {
+        transform: translateY(-.5rem);
+    }
+
+
+    .p-img-not-active {
+        display: none;
+    }
+
+    @media screen and (max-width: 1067px) {
+        .portfolio-img {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .img-overlay .overlay {
+            transform: translateY(300%);
+        }
+    }
+
+    @media screen and (max-width: 850px) {
+        .portfolio-img {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media screen and (max-width: 359px) {
+        .portfolio-img {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="content">
+                <div class="logo"><a href="#home">POWER</a></div>
+                <ul class="menu-list">
+                    <div class="icon cancel-btn">
+                        <img src="img/close.svg" alt="">
+                    </div>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#aboutus">About</a></li>
+                    <li><a href="access.html">Accessories</a></li>
+                    <li><a href="about.html">Workouts</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="icon menu-btn">
+                    <img src="img/hamburguer.svg" alt="">
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <section class="section section-portfolio" id="portfolio-section">
+        <div class="container aap">
+            <h2 class="common-heading">
+                Workouts
+            </h2>
+
+        </div>
+
+        <div class="container grid grid-four-col portfolio-img">
+            <div class="img-overlay p-btn--1">
+                <img src="img/gym-546138__480.webp" alt="work">
+                <div class="overlay">
+                    <a href="" target="sahil" class="common-heading1"> Workout</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellat error, nemo nisi sunt hic
+                        quisquam porro vel dolor adipisci officiis minima placeat asperiores ut velit! Aspernatur
+                        voluptates consequuntur quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                        modi!</p>
+                </div>
+            </div>
+            <div class="img-overlay p-btn--2">
+                <img src="img/weightlifting-2427461__480.jpg" alt="work">
+                <div class="overlay">
+                    <a href="" target="sahil" class="common-heading1"> Workout</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellat error, nemo nisi sunt hic
+                        quisquam porro vel dolor adipisci officiis minima placeat asperiores ut velit! Aspernatur
+                        voluptates consequuntur quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                        modi!</p>
+                </div>
+            </div>
+            <div class="img-overlay p-btn--3 p-btn--2 ">
+                <img src="img/gym-546138__480.webp" alt="work">
+                <div class="overlay">
+                    <a href="" target="sahil" class="common-heading1"> Workout</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellat error, nemo nisi sunt hic
+                        quisquam porro vel dolor adipisci officiis minima placeat asperiores ut velit! Aspernatur
+                        voluptates consequuntur quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                        modi!</p>
+                </div>
+            </div>
+            <div class="img-overlay p-btn--1">
+                <img src="img/weightlifting-2427461__480.jpg" alt="work">
+                <div class="overlay">
+                    <a href="" target="sahil" class="common-heading1"> Workout</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellat error, nemo nisi sunt hic
+                        quisquam porro vel dolor adipisci officiis minima placeat asperiores ut velit! Aspernatur
+                        voluptates consequuntur quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                        modi!</p>
+                </div>
+            </div>
+            <div class="img-overlay p-btn--2">
+                <img src="img/gym-546138__480.webp" alt="work">
+                <div class="overlay">
+                    <a href="" target="sahil" class="common-heading1"> Workout</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellat error, nemo nisi sunt hic
+                        quisquam porro vel dolor adipisci officiis minima placeat asperiores ut velit! Aspernatur
+                        voluptates consequuntur quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                        modi!</p>
+                </div>
+            </div>
+            <div class="img-overlay p-btn--3 p-btn--2 ">
+                <img src="img/gym-546138__480.webp" alt="work">
+                <div class="overlay">
+                    <a href="" target="sahil" class="common-heading1"> Workout</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellat error, nemo nisi sunt hic
+                        quisquam porro vel dolor adipisci officiis minima placeat asperiores ut velit! Aspernatur
+                        voluptates consequuntur quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                        modi!</p>
+                </div>
+            </div>
+            <div class="img-overlay p-btn--3 p-btn--2 ">
+                <img src="img/gym-546138__480.webp" alt="work">
+                <div class="overlay">
+                    <a href="" target="sahil" class="common-heading1"> Workout</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellat error, nemo nisi sunt hic
+                        quisquam porro vel dolor adipisci officiis minima placeat asperiores ut velit! Aspernatur
+                        voluptates consequuntur quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                        modi!</p>
+                </div>
+            </div>
+            <div class="img-overlay p-btn--3 p-btn--2 ">
+                <img src="img/weightlifting-2427461__480.jpg" alt="work">
+                <div class="overlay">
+                    <a href="" target="sahil" class="common-heading1"> Workout</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellat error, nemo nisi sunt hic
+                        quisquam porro vel dolor adipisci officiis minima placeat asperiores ut velit! Aspernatur
+                        voluptates consequuntur quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                        modi!</p>
+                </div>
+            </div>
+            <div class="img-overlay p-btn--3 p-btn--2 ">
+                <img src="img/gym-546138__480.webp" alt="work">
+                <div class="overlay">
+                    <a href="" target="sahil" class="common-heading1"> Workout</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellat error, nemo nisi sunt hic
+                        quisquam porro vel dolor adipisci officiis minima placeat asperiores ut velit! Aspernatur
+                        voluptates consequuntur quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                        modi!</p>
+                </div>
+            </div>
+            <div class="img-overlay p-btn--3 p-btn--2 ">
+                <img src="img/weightlifting-2427461__480.jpg" alt="work">
+                <div class="overlay">
+                    <a href="" target="sahil" class="common-heading1"> Workout</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellat error, nemo nisi sunt hic
+                        quisquam porro vel dolor adipisci officiis minima placeat asperiores ut velit! Aspernatur
+                        voluptates consequuntur quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                        modi!</p>
+                </div>
+            </div>
+            <div class="img-overlay p-btn--3 p-btn--2 ">
+                <img src="img/gym-546138__480.webp" alt="work">
+                <div class="overlay">
+                    <a href="" target="sahil" class="common-heading1"> Workout</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellat error, nemo nisi sunt hic
+                        quisquam porro vel dolor adipisci officiis minima placeat asperiores ut velit! Aspernatur
+                        voluptates consequuntur quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                        modi!</p>
+                </div>
+            </div>
+            <div class="img-overlay p-btn--3 p-btn--2 ">
+                <img src="img/weightlifting-2427461__480.jpg" alt="work">
+                <div class="overlay">
+                    <a href="" target="sahil" class="common-heading1"> Workout</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellat error, nemo nisi sunt hic
+                        quisquam porro vel dolor adipisci officiis minima placeat asperiores ut velit! Aspernatur
+                        voluptates consequuntur quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                        modi!</p>
+                </div>
+            </div>
+            <div class="img-overlay p-btn--3 p-btn--2 ">
+                <img src="img/weightlifting-2427461__480.jpg" alt="work">
+                <div class="overlay">
+                    <a href="" target="sahil" class="common-heading1"> Workout</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellat error, nemo nisi sunt hic
+                        quisquam porro vel dolor adipisci officiis minima placeat asperiores ut velit! Aspernatur
+                        voluptates consequuntur quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                        modi!</p>
+                </div>
+            </div>
+            <div class="img-overlay p-btn--3 p-btn--2 ">
+                <img src="img/weightlifting-2427461__480.jpg" alt="work">
+                <div class="overlay">
+                    <a href="" target="sahil" class="common-heading1"> Workout</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellat error, nemo nisi sunt hic
+                        quisquam porro vel dolor adipisci officiis minima placeat asperiores ut velit! Aspernatur
+                        voluptates consequuntur quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                        modi!</p>
+                </div>
+            </div>
+            <div class="img-overlay p-btn--3 p-btn--2 ">
+                <img src="img/gym-546138__480.webp" alt="work">
+                <div class="overlay">
+                    <a href="" target="sahil" class="common-heading1"> Workout</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellat error, nemo nisi sunt hic
+                        quisquam porro vel dolor adipisci officiis minima placeat asperiores ut velit! Aspernatur
+                        voluptates consequuntur quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                        modi!</p>
+                </div>
+            </div>
+            <div class="img-overlay p-btn--3 p-btn--2 ">
+                <img src="img/weightlifting-2427461__480.jpg" alt="work">
+                <div class="overlay">
+                    <a href="" target="sahil" class="common-heading1"> Workout</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellat error, nemo nisi sunt hic
+                        quisquam porro vel dolor adipisci officiis minima placeat asperiores ut velit! Aspernatur
+                        voluptates consequuntur quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                        modi!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================== 
+            Our footer Section   
+      ========================================  -->
+
+    <footer class="section section-footer ">
+        <div class="container grid grid-four-col">
+            <div class="f-about">
+                <h3>About</h3>
+                <p>We have tested a number of registry fix and clean utilities and present our top 3 list on our site
+                    for your convenience. Hope you like it.</p>
+            </div>
+
+            <div class="f-links">
+                <h3>Links</h3>
+                <ul>
+                    <li><span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span><a href="#">home</a></li>
+                    <li><span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span><a href="#">about</a></li>
+                    <li><span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span><a href="#">services</a></li>
+                    <li><span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span><a href="#">portfolio</a></li>
+
+                    <li><span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span><a href="#">contact</a></li>
+                </ul>
+            </div>
+
+            <div class="f-services">
+                <h3>Services</h3>
+                <ul>
+                    <li><span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span><a href="#">web design</a></li>
+                    <li><span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span><a href="#">web development</a></li>
+                    <li><span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span><a href="#">Mern Project</a></li>
+
+                    <li><span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span><a href="#">Online Classes</a></li>
+                    <li><span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span><a href="#">Youtube Course</a></li>
+                </ul>
+            </div>
+
+            <div class="f-address">
+                <h3>Have a Questions?</h3>
+                <address>
+                    <div>
+                        <p> <span>
+                                <ion-icon name="location-outline"></ion-icon>
+                            </span> Jaipur, India </p>
+                    </div>
+
+                    <div>
+                        <p> <span>
+                                <ion-icon name="call-outline"></ion-icon>
+                            </span> <a href="tel:+91123456789"> +91 9874563215 </a></p>
+                    </div>
+
+                    <div>
+                        <p> <span>
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </span> <a href="mailto: pareeksahil000@gmail.com"> pareeksahil000@gmail.com </a> </p>
+                    </div>
+                </address>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="f-social-icons">
+                <a href="#" target="_blank">
+                    <img src="img/youtube_logo_53e7b203af.png" alt="" class="icons">
+                </a>
+
+                <a href="#" target="_blank">
+                    <img src="img/youtube_logo_53e7b203af.png" alt="" class="icons">
+                </a>
+
+                <a href="#" target="_blank">
+                    <img src="img/facebook_logo_1bf0fdc5f9.png" alt="" class="icons">
+                </a>
+            </div>
+
+            <div class="f-credits">
+                <p>Copyright ©2022 All rights reserved | This website is made with ❤ by sahil pareek</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script> const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menu = document.querySelector(".menu-list");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = () => {
+            menu.classList.add("active");
+            menuBtn.classList.add("hide");
+            cancelBtn.classList.add("show");
+            body.classList.add("disabledScroll");
+        }
+        cancelBtn.onclick = () => {
+            menu.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            cancelBtn.classList.remove("show");
+            body.classList.remove("disabledScroll");
+        }
+
+        window.onscroll = () => {
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>
+</body>
+
+</html>
